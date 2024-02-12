@@ -1,134 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-7528927905508030">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" href="favicon.jpg" type="image/x-icon"> 
+    <title>HOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <!-- Google AdSense script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7528927905508030"
-     crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background: linear-gradient(135deg, #ffd700, #ffdb58); /* Mustard Yellow */
-            color: #fff;
-            background-image: url('itachi-background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #ffd700; /* Mustard Yellow */
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            animation: fadeInDown 1s ease;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav li {
-            margin: 0 10px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-            transition: color 0.3s ease-in-out;
-        }
-
-        a:hover {
-            color: #E74C3C;
-        }
-
-        .main-content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            color: #333;
-            flex: 1; /* Fill remaining space */
-            text-align: center;
-        }
-
-        footer {
-            background-color: #ffd700; /* Mustard Yellow */
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            animation: fadeInUp 1s ease;
-            margin-top: auto; /* Push footer to bottom */
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media only screen and (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav li {
-                display: block;
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-
-            .main-content {
-                padding: 15px;
-            }
-        }
-    </style>
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -140,7 +21,7 @@
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="ebooks.html"><i class="fas fa-book"></i> eBooks</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
                 <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
@@ -148,12 +29,22 @@
     </header>
 
     <section class="main-content">
-        <h2>Welcome to SAJAN CHHETRI's Website</h2>
-        <p>This is the homepage of SAJAN CHHETRI's website. Feel free to explore!</p>
+        <h2 style="color: #27ae60;">Welcome to Sajan Chhetri's Website</h2>
+        <p>This is the home page content. You can add your content here.</p>
+        <!-- Google AdSense ad unit -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7528927905508030"
+            data-ad-slot="1234567890"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </section>
 
     <footer>
-        &copy; 2023 SAJAN CHHETRI | All Rights Reserved | Email: <a href="mailto:info@sajanchhetri.com.np">info@sajanchhetri.com.np</a>
+        &copy; 2023 SAJAN CHHETRI | All Rights Reserved
     </footer>
 </body>
 
