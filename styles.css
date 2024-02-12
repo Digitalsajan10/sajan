@@ -22,9 +22,7 @@ header {
 }
 
 header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 nav ul {
@@ -39,13 +37,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #27ae60;
-}
+    }
 
 /* Main content styles */
 .main-content {
@@ -63,13 +55,10 @@ footer {
 /* Common styles */
 h2 {
     color: #27ae60;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
+    }
 
 p {
-    font-size: 18px;
-    margin-bottom: 20px;
+        margin-bottom: 20px;
 }
 
 /* Contact form styles */
@@ -80,8 +69,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    font-size: 18px;
-}
+    }
 
 input[type="text"],
 input[type="email"],
@@ -91,8 +79,7 @@ textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-}
+    }
 
 textarea {
     height: 100px;
@@ -105,8 +92,7 @@ input[type="submit"] {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
@@ -138,27 +124,5 @@ input[type="submit"]:hover {
 
     footer {
         padding: 10px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    label {
-        font-size: 16px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        font-size: 14px;
-    }
-
-    input[type="submit"] {
-        font-size: 16px;
     }
 }
