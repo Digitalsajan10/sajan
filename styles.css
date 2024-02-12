@@ -79,3 +79,24 @@ nav.nav-right ul li a:before {
 nav.nav-right ul li a:hover:before {
     width: 100%;
 }
+
+/* Add this CSS for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu toggle button for smaller screens */
+    }
+
+    nav.nav-right {
+        display: none; /* Hide the nav links by default on smaller screens */
+    }
+
+    /* Adjust header title font size for smaller screens if necessary */
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    /* Adjust padding or margin for smaller screens if necessary */
+    header {
+        padding: 10px;
+    }
+}
