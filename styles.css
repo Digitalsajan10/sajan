@@ -1,12 +1,8 @@
-/* Reset default browser styles */
+/* Reset default browser styles and set default font family and size */
 html, body, h1, h2, h3, p, ul, li, a, form, input, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Set default font family and size */
-body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -15,123 +11,71 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #000; /* Dark black background */
     color: #fff;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
+.logo h1 {
+    margin: 0;
     font-size: 24px;
+    text-decoration: none; /* Remove underline */
 }
 
 .highlight {
     color: #ff0000; /* Red color for Sajan */
+    text-decoration: none; /* Remove underline */
 }
 
 .name {
-    color: #ffffff; /* White color for Chhetri */
+    color: #fff; /* White color for Chhetri */
     font-weight: bold;
+    text-shadow: 0 0 5px yellow; /* Yellow shadow */
 }
 
-nav ul {
+.menu-toggle {
+    display: none; /* Hide by default */
+    cursor: pointer;
+}
+
+/* Navigation styles */
+nav.nav-right {
+    display: flex;
+}
+
+nav.nav-right ul {
     list-style-type: none;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
+nav.nav-right ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+nav.nav-right ul li:last-child {
+    margin-right: 0;
 }
 
-/* Main content styles */
-.main-content {
-    padding: 20px;
+nav.nav-right ul li a {
+    position: relative;
+    color: #fff; /* White color for nav menu links */
+    text-decoration: none; /* Remove underline */
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+nav.nav-right ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff0000; /* Red color for lava lamp effect */
+    transition: width 0.3s ease;
 }
 
-/* Common styles */
-h2 {
-    color: #27ae60;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-/* Contact form styles */
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
+nav.nav-right ul li a:hover:before {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-textarea {
-    height: 100px;
-}
-
-input[type="submit"] {
-    background-color: #27ae60;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #219653;
-}
-
-/* Responsive design */
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 0 0 10px;
-    }
-
-    nav ul li:last-child {
-        margin-bottom: 0;
-    }
-
-    .main-content {
-        padding: 10px;
-    }
-
-    footer {
-        padding: 10px;
-    }
 }
