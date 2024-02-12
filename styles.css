@@ -36,12 +36,17 @@ header:hover {
     background-color: #218c53;
 }
 
+nav {
+    background-color: #27ae60;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav li {
@@ -49,14 +54,16 @@ nav li {
     margin-right: 20px;
 }
 
-a {
-    text-decoration: none;
+nav a {
     color: #fff;
-    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-a:hover {
-    color: #E74C3C;
+nav a:hover {
+    background-color: #218c53;
 }
 
 .main-content {
