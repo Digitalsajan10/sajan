@@ -614,38 +614,3 @@ img {
 
 
 
-/* For the counter element */
-.blog__counter {
-  /* Adjust as needed */
-  display: inline-block;
-  background-color: #fff;
-  color: #000; /* Change to a color that contrasts well with the background */
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.8rem;
-}
-
-/* For the read more button */
-.read-more-btn {
-  display: block;
-  text-align: center;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.read-more-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Make the content visible when the counter is clicked */
-.blog__content {
-  display: none;
-}
-
-.blog__content.visible {
-  display: block;
-}
