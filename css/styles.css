@@ -532,50 +532,55 @@ img {
   background-color: #0056b3;
 } 
 
-/* New CSS styles for Blogs section */
+/* Styles for the Blogs section */
+
 .blogs {
   background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blogs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .blog {
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog__title {
-  font-size: 1.2rem;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .blog__excerpt {
-  margin-bottom: 10px;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .blog__content {
-  display: none; /* Hide full content by default */
-}
-
-.blog__content.visible {
-  display: block; /* Show full content when visible class is added */
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .read-more-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 20px;
+  display: block;
+  text-align: center;
   background-color: #007bff;
   color: #fff;
-  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
 .read-more-btn:hover {
