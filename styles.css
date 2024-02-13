@@ -1,5 +1,5 @@
 /* Reset default browser styles and set default font family and size */
-html, body, h1, h2, h3, p, ul, li, a, form, input, textarea, button {
+html, body, h1, h2, h3, p, ul, li, a, form, input, textarea, button, header, footer, nav {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ html, body, h1, h2, h3, p, ul, li, a, form, input, textarea, button {
 
 /* Header styles */
 header {
-    background-color: #000; /* Dark black background */
+    background-color: #000;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -22,22 +22,22 @@ header {
 .logo h1 {
     margin: 0;
     font-size: 24px;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .highlight {
-    color: #ff0000; /* Red color for Sajan */
-    text-decoration: none; /* Remove underline */
+    color: #ff0000;
+    text-decoration: none;
 }
 
 .name {
-    color: #fff; /* White color for Chhetri */
+    color: #fff;
     font-weight: bold;
-    text-shadow: 0 0 5px yellow; /* Yellow shadow */
+    text-shadow: 0 0 5px yellow;
 }
 
 .menu-toggle {
-    display: none; /* Hide by default */
+    display: none;
     cursor: pointer;
 }
 
@@ -61,8 +61,8 @@ nav.nav-right ul li:last-child {
 
 nav.nav-right ul li a {
     position: relative;
-    color: #fff; /* White color for nav menu links */
-    text-decoration: none; /* Remove underline */
+    color: #fff;
+    text-decoration: none;
 }
 
 nav.nav-right ul li a:before {
@@ -72,7 +72,7 @@ nav.nav-right ul li a:before {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #ff0000; /* Red color for lava lamp effect */
+    background-color: #ff0000;
     transition: width 0.3s ease;
 }
 
@@ -80,22 +80,28 @@ nav.nav-right ul li a:hover:before {
     width: 100%;
 }
 
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
 /* Add this CSS for mobile responsiveness */
 @media only screen and (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Show menu toggle button for smaller screens */
+        display: block;
     }
 
     nav.nav-right {
-        display: none; /* Hide the nav links by default on smaller screens */
+        display: none;
     }
 
-    /* Adjust header title font size for smaller screens if necessary */
     .logo h1 {
         font-size: 20px;
     }
 
-    /* Adjust padding or margin for smaller screens if necessary */
     header {
         padding: 10px;
     }
