@@ -533,3 +533,11 @@ img {
 .ebook-button:hover {
   background-color: #0056b3;
 }
+.ebooks-container {
+  justify-content: center;
+}
+
+.ebook {
+  width: 300px;
+  height: auto;
+}
