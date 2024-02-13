@@ -587,8 +587,6 @@ img {
   background-color: #0056b3;
 }
 
-
-
 .read-more-btn {
   display: block;
   text-align: center;
@@ -611,13 +609,6 @@ img {
 .blog__content.visible {
   display: block;
 }
-
-
-
-
-
-/* Add this CSS code to your styles.css file */
-
 /* Red button style */
 .red-button {
   background-color: #ff0000; /* Red background color */
