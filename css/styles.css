@@ -534,14 +534,16 @@ img {
 
 /* Styles for the Blogs section */
 
+/* styles.css */
+
 .blogs {
   background-color: #f9f9f9;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .blogs-container {
@@ -552,24 +554,22 @@ img {
 
 .blog {
   background-color: #fff;
-  border-radius: 10px;
   padding: 20px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .blog__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .blog__excerpt {
-  color: #666;
-  margin-bottom: 20px;
+  color: #777;
 }
 
 .blog__content {
-  line-height: 1.6;
-  margin-bottom: 20px;
+  display: none;
 }
 
 .read-more-btn {
@@ -585,12 +585,4 @@ img {
 
 .read-more-btn:hover {
   background-color: #0056b3;
-}
-
-.blog__content {
-  display: none;
-}
-
-.blog__content.visible {
-  display: block;
 }

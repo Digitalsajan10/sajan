@@ -56,27 +56,30 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Get all "Read More" buttons
-    var readMoreButtons = document.querySelectorAll('.read-more-btn');
 
-    // Loop through each "Read More" button
-    readMoreButtons.forEach(function(button) {
-        // Add click event listener to each button
-        button.addEventListener('click', function(event) {
-            // Prevent default link behavior
-            event.preventDefault();
-            
-            // Toggle visibility of the full content
-            var content = this.parentElement.querySelector('.blog__content');
-            content.classList.toggle('visible');
-            
-            // Change button text based on content visibility
-            if (content.classList.contains('visible')) {
-                this.textContent = 'Read Less';
-            } else {
-                this.textContent = 'Read More';
-            }
-        });
+
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the "Read More" button
+    var readMoreButton = document.querySelector('.read-more-btn');
+
+    // Get the blog content div
+    var blogContent = document.querySelector('#blog-content');
+
+    // Add click event listener to the "Read More" button
+    readMoreButton.addEventListener('click', function(event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Toggle visibility of the blog content
+        if (blogContent.style.display === 'none' || blogContent.style.display === '') {
+            blogContent.style.display = 'block';
+            readMoreButton.textContent = 'Read Less';
+        } else {
+            blogContent.style.display = 'none';
+            readMoreButton.textContent = 'Read More';
+        }
     });
 });
