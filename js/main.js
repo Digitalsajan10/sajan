@@ -56,7 +56,6 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
-// main.js
 document.addEventListener('DOMContentLoaded', function() {
     // Get all "Read More" buttons
     var readMoreButtons = document.querySelectorAll('.read-more-btn');
@@ -69,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             
             // Toggle visibility of the full content
-            var content = this.previousElementSibling;
+            var content = this.parentElement.querySelector('.blog__content');
             content.classList.toggle('visible');
             
             // Change button text based on content visibility
