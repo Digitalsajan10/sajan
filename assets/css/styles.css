@@ -484,3 +484,11 @@ img {
     width: 450px;
   }
 }
+.ebooks-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.ebooks__container {
+  display: inline-flex;
+}
