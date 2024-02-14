@@ -1,46 +1,47 @@
 /*===== MENU SHOW =====*/ 
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId);
+    const nav = document.getElementById(navId);
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
     }
-}
-showMenu('nav-toggle','nav-menu')
+};
+showMenu('nav-toggle', 'nav-menu');
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLinks = document.querySelectorAll('.nav__link');
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu');
     // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
+    navMenu.classList.remove('show');
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLinks.forEach(navLink => navLink.addEventListener('click', linkAction));
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
-const scrollActive = () =>{
-    const scrollDown = window.scrollY
+const scrollActive = () => {
+    const scrollDown = window.scrollY;
+    const navMenuLinks = document.querySelectorAll('.nav__menu a');
 
-  sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-        
-        if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
-            sectionsClass.classList.add('active-link')
-        }else{
-            sectionsClass.classList.remove('active-link')
-        }                                                    
-    })
-}
-window.addEventListener('scroll', scrollActive)
+    sections.forEach((current, index) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 58;
+        const sectionId = current.getAttribute('id');
+        const navMenuLink = navMenuLinks[index];
+
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
+            navMenuLink.classList.add('active-link');
+        } else {
+            navMenuLink.classList.remove('active-link');
+        }
+    });
+};
+window.addEventListener('scroll', scrollActive);
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
@@ -48,7 +49,7 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 200,
-//     reset: true
+    // reset: true
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
@@ -56,11 +57,7 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
-
-
-
-// script.js
-
+/*===== READ MORE BUTTONS =====*/
 document.addEventListener('DOMContentLoaded', function() {
     const readMoreButtons = document.querySelectorAll('.read-more-btn');
 
