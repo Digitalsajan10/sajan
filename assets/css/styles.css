@@ -531,3 +531,41 @@ img {
 .ebook__download .button:hover {
   background-color: #218838;
 }
+/* Add this CSS for the blue "Read more" button */
+.read-more-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Style the blog container */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between blog entries */
+}
+
+.blog {
+  flex: 1 1 300px; /* Adjust the width of each blog entry */
+  background-color: #f9f9f9; /* Add a background color for better visibility */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.blog-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.blog-summary {
+  margin-bottom: 15px;
+}
