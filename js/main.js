@@ -62,22 +62,16 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 // script.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all "Read More" buttons
-    var readMoreButtons = document.querySelectorAll('.read-more-btn');
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
 
-    // Loop through each "Read More" button
-    readMoreButtons.forEach(function(button) {
-        // Add click event listener to each button
-        button.addEventListener('click', function(event) {
-            // Prevent default link behavior
-            event.preventDefault();
-            
-            // Toggle visibility of the full content
-            var content = this.parentElement.querySelector('.blog__content');
-            content.classList.toggle('visible');
-            
-            // Change button text based on content visibility
-            if (content.classList.contains('visible')) {
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const blogContent = this.previousElementSibling;
+            const isHidden = blogContent.classList.toggle('show');
+
+            // Update button text based on content visibility
+            if (isHidden) {
                 this.textContent = 'Read Less';
             } else {
                 this.textContent = 'Read More';
