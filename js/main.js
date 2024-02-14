@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     readMoreButtons.forEach(button => {
         button.addEventListener('click', function(e) {
-            e.preventDefault();
+            e.preventDefault(); // Prevent default behavior of anchor tag
             const blogContent = this.previousElementSibling;
             const isHidden = blogContent.classList.toggle('show');
 
