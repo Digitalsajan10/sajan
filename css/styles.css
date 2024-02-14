@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -25,6 +26,7 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -96,7 +98,6 @@ img {
   padding-bottom: 2rem;
 }
 
-/*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -592,9 +593,4 @@ img {
 
 .blog__content.visible {
   display: block;
-}
-
-/* Hide the button initially */
-.read-more-btn.hide {
-  display: none;
 }
