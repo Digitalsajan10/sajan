@@ -57,8 +57,11 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
 // JavaScript
-document.querySelector('.Blogs .read-more-btn').addEventListener('click', function() {
-    const fullContent = document.querySelector('.Blogs .full-content');
-    fullContent.style.display = fullContent.style.display === 'none' ? 'block' : 'none';
-    this.textContent = this.textContent === 'Read more' ? 'Read less' : 'Read more';
+document.querySelectorAll('.Blogs .read-more-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const fullContent = this.nextElementSibling;
+        fullContent.style.display = fullContent.style.display === 'none' ? 'block' : 'none';
+        this.textContent = fullContent.style.display === 'none' ? 'Read more' : 'Read less';
+    });
 });
+
