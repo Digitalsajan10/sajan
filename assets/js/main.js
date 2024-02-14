@@ -55,9 +55,10 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
 // JavaScript
-document.querySelector('.read-more-btn').addEventListener('click', function() {
-    const fullContent = document.querySelector('.blog-content .full-content');
+document.querySelector('.Blogs .read-more-btn').addEventListener('click', function() {
+    const fullContent = document.querySelector('.Blogs .full-content');
     fullContent.style.display = fullContent.style.display === 'none' ? 'block' : 'none';
     this.textContent = this.textContent === 'Read more' ? 'Read less' : 'Read more';
 });
