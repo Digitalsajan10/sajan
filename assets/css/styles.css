@@ -484,30 +484,97 @@ img {
     width: 450px;
   }
 }
+
+
+/* Blogs Section */
+.Blogs {
+  padding: 80px 0;
+}
+
+.blog-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.blog-summary {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.full-content {
+  display: none;
+}
+
+.full-content.active {
+  display: block;
+}
+
+/* Read more button */
+.read-more-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* eBooks Section */
+.ebooks {
+  padding: 80px 0;
+}
+
 .ebooks-scroll-wrapper {
-  overflow-x: auto;
+  overflow-x: scroll;
   white-space: nowrap;
 }
 
 .ebooks__container {
-  display: inline-flex;
-}
-/* CSS */
-.blog {
-  margin-top: var(--mb-6);
+  display: inline-block;
+  margin: 0 auto;
 }
 
-.blog-content .full-content {
-  display: none;
+.ebook {
+  width: 200px;
+  margin-right: 20px;
+  text-align: center;
 }
 
-.read-more-btn {
-  background-color: var(--first-color);
+.ebook__image {
+  margin-bottom: 15px;
+}
+
+.ebook__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ebook__title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.ebook__download .button {
+  padding: 8px 16px;
+  background-color: #28a745;
   color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
 }
 
-/* Additional styling as needed */
+.ebook__download .button:hover {
+  background-color: #218838;
+}
