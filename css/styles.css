@@ -589,3 +589,12 @@ img {
 .read-more-btn.hide {
   display: none;
 }
+
+.blog__content.visible {
+  display: block;
+}
+
+/* Hide the button initially */
+.read-more-btn.hide {
+  display: none;
+}

@@ -68,14 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent default behavior of anchor tag
             const blogContent = this.previousElementSibling;
-            const isHidden = blogContent.classList.toggle('show');
-
-            // Update button text based on content visibility
-            if (isHidden) {
-                this.textContent = 'Read Less';
-            } else {
-                this.textContent = 'Read More';
-            }
+            blogContent.classList.toggle('visible'); // Toggle the 'visible' class on the blog content
+            this.classList.add('hide'); // Hide the button
         });
     });
 });
