@@ -484,93 +484,47 @@ img {
     width: 450px;
   }
 }
-/* Book Card */
-.card__article {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--white-color);
-  border-radius: 1.25rem;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+/* Custom styles for eBooks section */
+
+.ebooks-section {
+  /* Reset default styles */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /* Apply custom styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
-.card__article:hover {
-  transform: translateY(-5px);
+.ebook-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card__image {
-  position: relative;
-  overflow: hidden;
-  background-color: var(--first-color-light);
-  padding-top: 1.5rem;
-  margin-bottom: -0.75rem;
+.ebook-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.card__img {
-  width: 180px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 5;
+.ebook-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
-.card__shadow {
-  width: 200px;
-  height: 200px;
-  background-color: var(--first-color-alt);
-  border-radius: 50%;
-  position: absolute;
-  top: 3.75rem;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
-  filter: blur(45px);
-}
-
-.card__data {
-  background-color: var(--container-color);
-  padding: 1.5rem 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  position: relative;
-  z-index: 10;
-}
-
-.card__name {
-  font-size: var(--h2-font-size);
-  color: var(--second-color);
-  margin-bottom: 0.75rem;
-}
-
-.card__description {
-  font-weight: 500;
-  margin-bottom: 1.75rem;
-}
-
-.card__button {
+.ebook-button {
   display: inline-block;
-  background-color: var(--first-color);
-  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
   border-radius: 0.25rem;
-  color: var(--dark-color);
-  font-weight: 600;
+  text-decoration: none;
 }
 
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-  .card__article {
-      flex-direction: row;
-  }
-  .card__data {
-      padding: 20px 20px 20px 30px;
-  }
-  .card__name {
-      font-size: 1.3rem;
-  }
-  .card__description {
-      font-size: 0.9rem;
-  }
-  .card__button {
-      padding: 8px 16px;
-  }
+.ebook-button:hover {
+  background-color: #0056b3;
 }
