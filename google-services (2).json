@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625697404949",
+    "project_id": "sajan-chhetri",
+    "storage_bucket": "sajan-chhetri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625697404949:android:cb364460fd85236f00761c",
+        "android_client_info": {
+          "package_name": "Sajanchhetri.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEcAgP6wnWutAM1qdkjEL1Kha1A_aG5tc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
