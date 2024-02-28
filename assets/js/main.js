@@ -65,3 +65,18 @@ document.querySelectorAll('.Blogs .read-more-btn').forEach(btn => {
     });
 });
 
+
+<script>
+function openPopup() {
+    document.getElementById("popupContainer").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popupContainer").style.display = "none";
+}
+
+// You can trigger the popup to open when the page loads, or when a certain condition is met
+window.onload = function() {
+    openPopup();
+};
+</script>
