@@ -99,19 +99,19 @@
         </section>
 
         <!-- Popup Container -->
-        <div class="popup-container" id="popupContainer">
-            <div class="popup">
-                <h2>Download Our App!</h2>
-                <p>Our app is available on the App Store and Google Play Store. Download it now to enjoy all its features!</p>
-                <p>Instructions:</p>
-                <ol>
-                    <li>Open the App Store or Google Play Store on your device.</li>
-                    <li>Search for "<em>Your App Name</em>".</li>
-                    <li>Tap on the download button to install the app.</li>
-                </ol>
-                <button onclick="closePopup()">Close</button>
-            </div>
+<div class="popup-container" id="popupContainer">
+    <div class="popup">
+        <h2 class="popup__title">Download Our App!</h2>
+        <p class="popup__text">Our app, "Sajan Chhetri," is available on the Google Play Store. Download it now to enjoy all its features!</p>
+        <div class="popup__instructions">
+            <p class="popup__step"><span class="popup__step-number">1.</span> Open the Google Play Store on your device.</p>
+            <p class="popup__step"><span class="popup__step-number">2.</span> Search for "Sajan Chhetri".</p>
+            <p class="popup__step"><span class="popup__step-number">3.</span> Tap on the download button to install the app.</p>
         </div>
+        <a href="https://play.google.com/store/apps/details?id=com.yourapp.package" class="button popup__download">Download</a>
+        <button class="popup__close" onclick="closePopup()">Close</button>
+    </div>
+</div>
 
     </main>
 
