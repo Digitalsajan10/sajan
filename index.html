@@ -73,46 +73,101 @@
             </div>
         </section>
 
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+      
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
 
-            <div class="skills__container bd-grid">          
-                <div>
-                    <h2 class="skills__subtitle">Professional Skills</h2>
-                    <p class="skills__text">HTML5 at 95%, CSS3 at 85%, JavaScript at 65%, and UX/UI at 85% showcase my expertise in web development and user experience design.</p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML5</span>
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">HTML5 at 95%, CSS3 at 85%, JavaScript at 65%, and UX/UI at 85% showcase my expertise in web development and user experience design.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
                         </div>
-                        <div class="skills__bar skills__html"></div>
-                        <div><span class="skills__percentage">95%</span></div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Other skill bars -->
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
                 </div>
-                
-                <div>              
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                </div>
+            </section>
+   
+    <!--===== EBOOKS =====-->
+    <section class="ebooks section" id="ebooks">
+        <h2 class="section-title">eBooks</h2>
+        <div class="ebooks-scroll-wrapper">
+            <div class="ebooks__container bd-grid">
+                <div class="ebook">
+                    <div class="ebook__image">
+                        <img src="assets/img/rich_dad_poor_dad.jpg" alt="Rich Dad Poor Dad">
+                    </div>
+                    <h3 class="ebook__title">Rich Dad Poor Dad</h3>
+                    <div class="ebook__download">
+                        <a href="https://drive.google.com/file/d/1aQxiqmF3Fw9beTS3Q2KGle_P0voSFgpC/view?usp=drive_link" class="button" download>Download</a>
+                    </div>
+               </div>
+           </div>
+    </section>
+
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form action="https://formspree.io/f/xzbnekpk" method="POST" class="contact__form">
+                    <input type="text" name="name" placeholder="Name" class="contact__input">
+                    <input type="email" name="_replyto" placeholder="Email" class="contact__input">
+                    <textarea name="message" placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
+                    <button type="submit" class="contact__button button">Send</button>
+                </form>
             </div>
         </section>
-
-        <!-- Popup Container -->
-<div class="popup-container" id="popupContainer">
-    <div class="popup">
-        <h2 class="popup__title">Download Our App!</h2>
-        <p class="popup__text">Our app, "Sajan Chhetri," is available on the Google Play Store. Download it now to enjoy all its features!</p>
-        <div class="popup__instructions">
-            <p class="popup__step"><span class="popup__step-number">1.</span> Open the Google Play Store on your device.</p>
-            <p class="popup__step"><span class="popup__step-number">2.</span> Search for "Sajan Chhetri".</p>
-            <p class="popup__step"><span class="popup__step-number">3.</span> Tap on the download button to install the app.</p>
-        </div>
-        <a href="https://play.google.com/store/apps/details?id=com.yourapp.package" class="button popup__download">Download</a>
-        <button class="popup__close" onclick="closePopup()">Close</button>
-    </div>
-</div>
-
     </main>
 
     <!--===== FOOTER =====-->
@@ -132,21 +187,5 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
-    
-    <script>
-        // JavaScript functions for opening and closing the popup
-        function openPopup() {
-            document.getElementById("popupContainer").style.display = "flex";
-        }
-
-        function closePopup() {
-            document.getElementById("popupContainer").style.display = "none";
-        }
-
-        // Open the popup when the page loads
-        window.onload = function() {
-            openPopup();
-        };
-    </script>
 </body>
-</html>
+</html> 
