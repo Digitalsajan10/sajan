@@ -523,36 +523,36 @@ img {
 }
 /* Add this CSS to your existing styles.css file or create a new one */
 
-.blog {
+.blogs {
   padding: 80px 0;
 }
 
-.blog .section-title {
+.blogs .section-title {
   font-size: 2rem;
   margin-bottom: 40px;
   text-align: center;
   color: #333;
 }
 
-/* Example styles for blog posts */
-.blog .blog-post {
+/* Example styles for individual blog posts */
+.blogs .blog-post {
   margin-bottom: 40px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
 
-.blog .blog-post h3 {
+.blogs .blog-post h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.blog .blog-post p {
+.blogs .blog-post p {
   color: #666;
 }
 
 /* Example styles for blog post images */
-.blog .blog-post img {
+.blogs .blog-post img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
