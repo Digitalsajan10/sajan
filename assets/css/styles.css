@@ -490,11 +490,12 @@ img {
   /* Reset default styles */
   margin: 0;
   padding: 0;
-  list-style: none;
+}
 
+.ebooks-container {
   /* Apply custom styles */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  overflow-x: auto;
   gap: 2rem;
 }
 
@@ -524,4 +525,3 @@ img {
   border-radius: 0.25rem;
   text-decoration: none;
 }
-
