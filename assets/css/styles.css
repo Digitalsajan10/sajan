@@ -487,13 +487,11 @@ img {
 /* Custom styles for eBooks section */
 
 .ebooks-section {
-  /* Reset default styles */
   margin: 0;
   padding: 0;
 }
 
 .ebooks-container {
-  /* Apply custom styles */
   display: flex;
   overflow-x: auto;
   gap: 2rem;
@@ -511,10 +509,8 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.ebook-description {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
+.ebook-download {
+  margin-top: 1rem;
 }
 
 .ebook-button {
