@@ -546,27 +546,48 @@ img {
   color: #333;
 }
 
-/* Example styles for individual blog posts */
-.blogs .blog-post {
-  margin-bottom: 40px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.blogs .blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
 }
 
-.blogs .blog-post h3 {
+.blogs .blog-post {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blogs .blog-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.blogs .blog-info {
+  padding: 20px;
+}
+
+.blogs .blog-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.blogs .blog-post p {
+.blogs .blog-meta {
   color: #666;
+  margin-bottom: 10px;
 }
 
-/* Example styles for blog post images */
-.blogs .blog-post img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.blogs .blog-content {
+  color: #333;
+}
+
+.blogs .read-more-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
 }
