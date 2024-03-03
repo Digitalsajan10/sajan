@@ -502,11 +502,20 @@ img {
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensure relative positioning */
+}
+
+.ebook-details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
 }
 
 .ebook-title {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: #333;
 }
 
 .ebook-download {
@@ -521,16 +530,3 @@ img {
   border-radius: 0.25rem;
   text-decoration: none;
 }
-/* Add this CSS to your existing styles.css file or create a new one */
-
-.blogs {
-  padding: 80px 0;
-}
-
-.blogs .section-title {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #333;
-}
-
