@@ -1,0 +1,15 @@
+/* Place this CSS in the file 'fuse-loading-bar.css' */
+#fuse-loading-bar {
+    box-sizing: border-box;
+    text-rendering: optimizelegibility;
+    height: 6px;
+    position: fixed;
+    top: 0px;
+    width: 1396.36px;
+    z-index: 999;
+    line-height: 21px;
+    font-size: 14px;
+    color: rgb(30, 41, 59);
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(241, 245, 249);
+  }
+  
