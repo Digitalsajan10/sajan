@@ -487,8 +487,7 @@ img {
 /* Custom styles for eBooks section */
 
 .ebooks-section {
-  margin: 0;
-  padding: 0;
+  padding: 3rem 0; /* Adjust padding as needed */
 }
 
 .ebooks-scroll-wrapper {
@@ -497,6 +496,7 @@ img {
   flex-wrap: nowrap;
   gap: 1rem;
   padding: 1rem;
+  justify-content: center; /* Center align items */
 }
 
 .ebook-card {
@@ -506,6 +506,7 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex: 0 0 auto;
   min-width: 200px; /* Adjust as needed */
+  max-width: 300px; /* Adjust as needed */
 }
 
 .ebook-image {
