@@ -532,4 +532,24 @@ img {
 
 .ebook-title {
   font-size: 1.2rem;
-  margin-bottom:
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.ebook-download {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.ebook-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.ebook-button:hover {
+  background-color: #0056b3; /* Change color on hover */
+}
