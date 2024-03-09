@@ -472,69 +472,14 @@ img {
     column-gap: 2rem;
   }
 }
-/* CSS for eBooks Section */
-.ebooks-section {
-  padding: 3rem 0; /* Adjust padding as needed */
-  overflow-x: auto; /* Allow horizontal scrolling */
-}
-
-.ebooks-scroll-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: center; /* Center align items */
-  max-width: 100%; /* Ensure the container doesn't overflow its parent */
-  overflow-x: auto; /* Allow horizontal scrolling */
-}
-
-.ebook-card {
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 0 0 auto;
-  width: calc(100% - 2rem); /* Set width to 100% minus padding */
-  max-width: 300px; /* Adjust as needed */
-  margin: 0 1rem; /* Add margin to create space between eBooks */
-}
-
-.ebook-image {
-  text-align: center;
-}
-
-.ebook-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
-}
-
-.ebook-details {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.ebook-title {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.ebook-download {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.ebook-button {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease; /* Add smooth transition */
-}
-
-.ebook-button:hover {
-  background-color: #0056b3; /* Change color on hover */
-}
+@media screen and (min-width: 992px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home {
+    padding: 10rem 0 2rem;
+  }
+  .home__img {
+    width: 450px;
+  }
