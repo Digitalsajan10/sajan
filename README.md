@@ -1,31 +1,45 @@
-# Sajan Chhetri Portfolio Website
+Sajan Chhetri Portfolio Website
+Welcome to Sajan Chhetri's Portfolio Website! This is a personal website showcasing my skills, projects, and contact information.
 
-Welcome to the Sajan Chhetri Portfolio Website! This repository contains the source code for my personal portfolio website.
+Table of Contents
+About
+Skills
+eBooks
+Contact
+License
+About
+I am Sajan Chhetri, a passionate web developer with a strong foundation in front-end and back-end technologies. I enjoy building responsive and user-friendly websites that provide a great user experience. My goal is to continue learning and growing as a developer to create innovative solutions that make a positive impact.
 
-## Table of Contents
+Skills
+Professional Skills
+HTML5 - 95%
+CSS3 - 85%
+JavaScript - 65%
+UX/UI - 85%
+eBooks
+Browse through a collection of eBooks:
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Rich Dad Poor Dad
 
-## Introduction
+Download
+Think and Grow Rich
 
-This website serves as my online portfolio where I showcase my skills, projects, and contact information. As a web developer, I aim to create an engaging and user-friendly experience for visitors to learn more about me and my work.
+Download
+The Intelligent Investor
 
-## Features
+Download
+The Psychology of Money
 
-- **About:** Learn about my background, experience, and goals as a web developer.
-- **Skills:** View my proficiency in various programming languages and technologies.
-- **eBooks:** Explore a collection of downloadable eBooks on various topics.
-- **Contact:** Get in touch with me through a contact form.
+Download
+The Art Of Public Speaking
 
-## Installation
+Download
+Contact
+Feel free to get in touch with me:
 
-To run this website locally, follow these steps:
+Name: [Your Name]
+Email: [Your Email Address]
+Message: [Your Message]
+Click on "Send" to reach out to me.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
+© 2024 Sajan Chhetri. All rights reserved.
