@@ -252,6 +252,14 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script>
+    function shareToFacebook(title, url, image) {
+        // Construct the Facebook share URL
+        let facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(title)}`;
+        // Open the Facebook share dialog
+        window.open(facebookShareUrl, '_blank');
+    }
+</script>
     <script src="assets/js/fuse-loading-bar.js"></script>
     <amp-ad width="100vw" height="320"
      type="adsense"
