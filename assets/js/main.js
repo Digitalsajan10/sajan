@@ -64,3 +64,12 @@ document.querySelectorAll('.Blogs .read-more-btn').forEach(btn => {
         this.textContent = fullContent.style.display === 'none' ? 'Read more' : 'Read less';
     });
 });
+
+<script>
+    function shareToFacebook(title, url, image) {
+        // Construct the Facebook share URL
+        let facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(title)}`;
+        // Open the Facebook share dialog
+        window.open(facebookShareUrl, '_blank');
+    }
+</script>
