@@ -35,14 +35,6 @@
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
-            <!-- Theme Change button -->
-            <div class="nav__btns">
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
-            </div>
-            <!-- End of Theme Change button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
         </nav>
     </header>
 
@@ -255,27 +247,6 @@
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/fuse-loading-bar.js"></script>
-    <script>
-        const themeButton = document.getElementById('theme-button');
-        const body = document.body;
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-    
-        if (currentTheme) {
-            body.classList.add(currentTheme);
-        }
-    
-        themeButton.addEventListener('click', () => {
-            if (body.classList.contains('dark')) {
-                body.classList.replace('dark', 'light');
-                localStorage.setItem('theme', 'light');
-                document.documentElement.setAttribute('data-theme', 'light');
-            } else {
-                body.classList.replace('light', 'dark');
-                localStorage.setItem('theme', 'dark');
-                document.documentElement.setAttribute('data-theme', 'dark');
-            }
-        });
-    </script>
     <amp-ad width="100vw" height="320"
      type="adsense"
      data-ad-client="ca-pub-7528927905508030"
