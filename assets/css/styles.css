@@ -522,23 +522,3 @@ img {
   background-color: #0056b3;
 }
 
-/* Apply dark theme variables to navigation bar */
-.nav__btns {
-  display: flex;
-  align-items: center;
-
-  /* Apply dark theme background and text colors */
-  background-color: var(--container-color);
-  color: var(--title-color);
-}
-
-/* Style for the theme change button */
-.change-theme {
-  font-size: 1.25rem;
-  margin-right: var(--mb-1);
-  cursor: pointer;
-}
-
-.change-theme:hover {
-  color: var(--first-color);
-}
