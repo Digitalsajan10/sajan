@@ -619,4 +619,9 @@ img {
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  transition: background-color 0.
+  transition: background-color 0.3s ease;
+}
+
+.ebook__download .button:hover {
+  background-color: #218838;
+}
