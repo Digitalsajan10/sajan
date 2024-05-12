@@ -205,10 +205,10 @@ img{
 }
 .home__img {
     position: absolute;
-    right: 0;
     bottom: 0;
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
+    right: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 /* ===== ABOUT =====*/
