@@ -203,11 +203,12 @@ img{
     transform: rotate(-180deg);
     color: var(--white-color);
 }
-.home__img{
+.home__img {
     position: absolute;
-    right: 10;
+    right: 0;
     bottom: 0;
-    width: 295px;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* ===== ABOUT =====*/
