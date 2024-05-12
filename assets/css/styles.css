@@ -485,13 +485,18 @@ img{
     }
 }
 
-/* For tall screens on mobiles y desktop*/
+/* For tall screens on mobiles and desktops */
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
     }
     .home__img {
         width: 500px;
-        right: 24%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 10px; /* Adjust margin as needed */
+        margin-right: 10px; /* Adjust margin as needed */
     }
 }
+
