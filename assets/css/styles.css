@@ -555,15 +555,15 @@ img {
 .nav__link--portal {
     display: flex;
     align-items: center;
-    background-color: var(--white-color);
-    color: var(--first-color);
+    background-color: var(--red-color); /* Change background color to red */
+    color: var(--white-color); /* Change text color to white */
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
 }
 
 .nav__link--portal:hover {
-    background-color: var(--first-color);
+    background-color: var(--red-color-dark); /* Change hover background color to a darker shade of red */
     color: var(--white-color);
 }
 
