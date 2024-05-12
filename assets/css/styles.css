@@ -204,11 +204,13 @@ img{
     color: var(--white-color);
 }
 .home__img {
+    max-width: 100%;
+    height: auto;
     position: absolute;
     bottom: 0;
     right: 0;
-    max-width: 100%;
-    height: auto;
+    margin-bottom: 2rem; /* Adjust margin as needed */
+    margin-right: 2rem; /* Adjust margin as needed */
 }
 
 /* ===== ABOUT =====*/
