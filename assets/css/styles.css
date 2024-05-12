@@ -550,3 +550,23 @@ img {
         height: 640px;
     }
 }
+
+/* Portal Button */
+.nav__link--portal {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    color: var(--first-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav__link--portal:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+.nav__link--portal i {
+    margin-right: 0.5rem;
+}
