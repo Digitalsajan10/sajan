@@ -380,15 +380,16 @@ img{
 
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
     .home__img {
-      width: 230px;
-      right: 0;
-      bottom: 0;
-      margin-right: 10px; /* Adjust margin as needed */
-      margin-bottom: 10px; /* Adjust margin as needed */
+        width: 300px; /* Adjust the width as needed */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 1rem; /* Adjust the margin as needed */
+        margin-right: 1rem; /* Adjust the margin as needed */
     }
-  }
+}
   
 
 @media screen and (min-width: 768px){
@@ -495,8 +496,7 @@ img{
         position: absolute;
         bottom: 0;
         right: 0;
-        margin-bottom: 10px; /* Adjust margin as needed */
-        margin-right: 10px; /* Adjust margin as needed */
+        margin-bottom: 2rem; /* Adjust the margin as needed */
+        margin-right: 2rem; /* Adjust the margin as needed */
     }
 }
-
