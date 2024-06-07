@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/index\.html$
+RewriteRule ^ - [R=404,L]
